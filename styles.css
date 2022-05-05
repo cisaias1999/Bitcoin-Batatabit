@@ -429,6 +429,7 @@ main {
   flex-direction: row;
   align-items: center;
   height: 316px;
+  overflow-y: hidden;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;

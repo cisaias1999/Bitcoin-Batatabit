@@ -110,7 +110,7 @@ main {
 .main_exchange_container {
   width: 100%;
   height: auto;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -162,7 +162,7 @@ main {
 }
 .main_tables {
   min-height: 35%;
-  min-height: 310px;
+  min-height: 330px;
   position: relative;
 }
 .main_tables_info {
@@ -203,9 +203,8 @@ main {
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 23px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding-left: 22px;
+  align-self: flex-start;
+  padding-left: 25px;
 }
 .main_grid_container {
   display: grid;
@@ -307,10 +306,37 @@ main {
   width: 100%;
   height: 900px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+.main_container_item {
+  width: 288px;
+  min-height: 152px;
+  background-color: #282623;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .main_container {
+    width: 100%;
+    height: 540px;
+  }
+
+  .main_container_items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+  }
+  .main_container_item {
+    width: 300px;
+  }
 }
 .main_container_details {
   position: relative;
@@ -337,18 +363,7 @@ main {
   font-size: 1.4rem;
   line-height: 18px;
 }
-.main_container_item {
-  width: 288px;
-  height: 152px;
-  background-color: #282623;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 /*.main_container_item:nth-child(2) {
   margin-top: 20px;
 }
@@ -447,9 +462,11 @@ main {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
+/*ocultar scroll*/
 ::-webkit-scrollbar {
   display: none;
 }
+
 .main_container_card {
   position: relative;
   scroll-snap-align: center;

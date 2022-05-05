@@ -333,6 +333,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+.main_container_details img {
+  position: absolute;
+  z-index: 100;
+  top: -15px;
+  right: calc(50% - 18px);
+}
 .main_container_details h2 {
   align-self: center;
   width: 288px;
@@ -629,6 +635,10 @@ ul li a {
   .main_container_item {
     width: 300px;
   }
+  .main_container_item_info {
+    width: 90%;
+    height: 130px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -659,6 +669,8 @@ ul li a {
     width: 60%;
     height: 400px;
   }
-  .main_container_item {
+  .main_container_item_info {
+    width: 90%;
+    height: 130px;
   }
 }

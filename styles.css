@@ -452,7 +452,6 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
   height: 316px;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -638,6 +637,12 @@ ul li a {
   .main_container_item_info {
     width: 90%;
     height: 130px;
+  }
+  .main_container_slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
